@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/images/losalerces.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
     <title>{{ title }}</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 <body>
 <header>
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh">
-<img src="/images/losalerces.webp" alt="Los Alerces" srcset="/images/losalerces.webp">
+<div class="logo">
+    <a href="/"><img src="/images/losalerces.webp" alt="Los Alerces" srcset="/images/losalerces.webp"></a>
 </div>
+<nav>
+<ul>
+    <li>TRIAGE COVID-19</li>
+    <li>SERVICIOS MÉDICOS</li>
+    <li>ACERCA DE NOSOTROS</li>
+    <li>CONTACTO</li>
+</ul>
+</nav>
 </header>
-    <main>{{ content | safe }}</main>
+    <main id="root" class="transition-fade">{{ content | safe }}</main>
+    <script src="{{ '/vendor/swup.min.js' | url }}"></script>
+    <script>
+        const swup = new Swup({ containers: ["#root"], });
+    </script>
 </body>
 </html>

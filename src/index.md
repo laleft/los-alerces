@@ -1,4 +1,4 @@
 ---
 title: Los Alerces
-layout: "base.njk"
+layout: "home.njk"
 ---
