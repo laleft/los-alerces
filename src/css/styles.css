@@ -76,11 +76,12 @@ nav a {
 .top-header {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .top-header img {
   height: fit-content;
+  margin-right: 4px;
 }
 
 .cta-1 {
@@ -101,7 +102,7 @@ nav a {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  display: inline;
+  display: flex;
 }
 
 .header-menu {
