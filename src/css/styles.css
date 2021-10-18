@@ -52,19 +52,63 @@ html.is-animating .transition-fade {
 }
 
 header {
-  width: 980px;
-  height: 108px;
+  width: 916px;
+  height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 20px;
+  align-items: end;
+  margin-bottom: 8px;
 }
 
 nav li {
   display: inline;
   margin-left: 20px;
-  font: normal normal normal 12px/1.4em "Raleway", sans-serif;
+  font: normal normal normal 13.2px "Raleway", sans-serif;
+  padding: 6px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top-header img {
+  height: fit-content;
+}
+
+.cta-1 {
+  background-color: #e0e5e7;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.cta-1 a span {
+  padding: 12px;
+  text-decoration: underline;
+}
+
+.cta-1 a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: inline;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .banner {

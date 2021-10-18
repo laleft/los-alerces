@@ -11,16 +11,31 @@
 <body>
 <header>
 <div class="logo">
-    <a href="/"><img src="/images/losalerces.webp" alt="Los Alerces" srcset="/images/losalerces.webp"></a>
+    <a href="/"><img src="/images/logo-cinta.webp" alt="Los Alerces" srcset="/images/logo-cinta.webp"></a>
 </div>
-<nav>
-<ul>
-    <li>TRIAGE COVID-19</li>
-    <li>SERVICIOS MÉDICOS</li>
-    <li>ACERCA DE NOSOTROS</li>
-    <li>CONTACTO</li>
-</ul>
-</nav>
+<div class="header-menu">
+    <div class="top-header">
+        <div class="cta-1">
+            <a href="http://92.204.134.108/AGP/pages/login.faces" rel="noopener noreferrer" target="_blank">
+                <img src="/images/calendar.svg" style="height: 48px; padding: 0; margin: 0" alt="">
+                <span>Reservá tu turno de forma virtual</span>
+            </a>
+        </div>
+            <img src="/images/instagram.webp" alt="Instagram">
+            <img src="/images/whatsapp.webp" alt="Whatsapp">
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/copia-de-laboratorio">TRIAGE COVID-19</a></li>
+                <li>SERVICIOS MÉDICOS</li>
+                <li>ACERCA DE NOSOTROS</li>
+                <li>CONTACTO</li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 </header>
     <main id="root" class="transition-fade">{{ content | safe }}</main>
     <script src="{{ '/vendor/swup.min.js' | url }}"></script>
