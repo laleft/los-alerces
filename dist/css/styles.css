@@ -94,7 +94,7 @@ nav a {
 }
 
 .cta-1 a span {
-  padding: 12px;
+  padding: 14px;
   text-decoration: underline;
 }
 
@@ -122,4 +122,26 @@ nav a {
 }
 
 .banner .banner-bg {
+}
+
+.hero {
+  width: 758px;
+  height: 582px;
+  background-image: url("/images/polvo\ de\ color\ rosa.webp");
+  margin: 60px auto;
+  opacity: 0.55;
+}
+
+.hero h2 {
+  text-align: center;
+  font-size: 37px;
+  padding: 26px;
+}
+
+.hero hr {
+  display: inline;
+  height: 3px;
+  width: 40px;
+  background-color: #000;
+  border: 0;
 }
