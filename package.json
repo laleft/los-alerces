@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build": "eleventy && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "clean-css": "^4.2.4"
   },
   "dependencies": {
     "swup": "^2.0.14"
