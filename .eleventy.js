@@ -10,5 +10,6 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "dist",
     },
+    pathPrefix: "/los-alerces/",
   };
 };
