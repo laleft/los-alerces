@@ -4,26 +4,270 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/losalerces.png" type="image/x-icon">
-    <link rel="stylesheet" href="/los-alerces/css/fonts.css">
-    <link rel="stylesheet" href="/los-alerces/css/styles.css">
+    <link rel="shortcut icon" href="/los-alerces/images/losalerces.png" type="image/x-icon">
+    
+    <style>
+    
+        /* raleway-regular - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/los-alerces/assets/fonts/raleway-v22-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/los-alerces/assets/fonts/raleway-v22-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-regular.svg#Raleway")
+      format("svg"); /* Legacy iOS */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/los-alerces/assets/fonts/raleway-v22-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/los-alerces/assets/fonts/raleway-v22-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/los-alerces/assets/fonts/raleway-v22-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-600.woff") format("woff"),
+    /* Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-600.svg#Raleway")
+      format("svg"); /* Legacy iOS */
+}
+/* raleway-italic - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/los-alerces/assets/fonts/raleway-v22-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/los-alerces/assets/fonts/raleway-v22-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-italic.svg#Raleway")
+      format("svg"); /* Legacy iOS */
+}
+/* raleway-600italic - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/los-alerces/assets/fonts/raleway-v22-latin-600italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/los-alerces/assets/fonts/raleway-v22-latin-600italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-600italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-600italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-600italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/los-alerces/assets/fonts/raleway-v22-latin-600italic.svg#Raleway")
+      format("svg"); /* Legacy iOS */
+}
+
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+header {
+  width: 916px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 8px;
+}
+
+nav ul {
+  margin-bottom: 20px;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+  font: normal normal normal 13.2px "Raleway", sans-serif;
+  padding: 6px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.top-header img {
+  height: fit-content;
+  margin-right: 4px;
+}
+
+.cta-1 {
+  background-color: #e0e5e7;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.cta-1 a span {
+  padding: 14px;
+  text-decoration: underline;
+}
+
+.cta-1 a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+}
+
+.cta-1 a:visited {
+  color: #000;
+}
+
+.cta-1 a:active {
+  color: #000;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.banner {
+  height: 318px;
+  width: 100%;
+  background-image: url("/los-alerces/images/los-alerces-banner.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -124px;
+}
+
+.banner .banner-bg {
+}
+
+.hero {
+  width: 100%;
+  /* background-image: url("/images/polvo\ de\ color\ rosa.webp"); */
+  background-color: #dbdbdb;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 34px;
+  color: #5491a7;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.hero hr {
+  display: inline;
+  height: 3px;
+  width: 40px;
+  background-color: #000;
+  border: 0;
+}
+
+.line {
+  border-top: 2px solid #5491a7;
+  height: 4px;
+  width: 20px;
+}
+
+.hero-subtitle {
+  font-size: 34px;
+  color: #5491a7;
+  font-weight: bold;
+  margin: 0;
+}
+
+video {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: #577b80;
+  font-size: 34px;
+  font-style: italic;
+}
+
+.services {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+    
+    </style>
     <title>Nosotros</title>
 </head>
 <body>
 <header>
 <div class="logo">
-    <a href="/"><img src="/images/logo-cinta.webp" alt="Los Alerces" srcset="/images/logo-cinta.webp"></a>
+    <a href="/"><img src="/los-alerces/images/logo-cinta.webp" alt="Los Alerces" srcset="/los-alerces/images/logo-cinta.webp"></a>
 </div>
 <div class="header-menu">
     <div class="top-header">
         <div class="cta-1">
             <a href="http://92.204.134.108/AGP/pages/login.faces" rel="noopener noreferrer" target="_blank">
-                <img src="/images/calendar.svg" style="height: 48px; padding: 0; margin: 0" alt="">
+                <img src="/los-alerces/images/calendar.svg" style="height: 48px; padding: 0; margin: 0" alt="">
                 <span>Reservá tu turno de forma virtual</span>
             </a>
         </div>
-            <img src="/images/instagram.webp" alt="Instagram">
-            <img src="/images/whatsapp.webp" alt="Whatsapp">
+            <img src="/los-alerces/images/instagram.webp" alt="Instagram">
+            <img src="/los-alerces/images/whatsapp.webp" alt="Whatsapp">
     </div>
     <div>
         <nav>

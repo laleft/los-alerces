@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/losalerces.png" type="image/x-icon">
-    <link rel="stylesheet" href="{{ '/css/fonts.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+    <link rel="shortcut icon" href="{{ '/images/losalerces.png' | url }}" type="image/x-icon">
+    {% set css %}
+        {% include "../css/fonts.css" %}
+        {% include "../css/styles.css" %}
+    {% endset %}
+    <style>
+    {{ css | safe }}
+    </style>
     <title>{{ title }}</title>
 </head>
 <body>
 <header>
 <div class="logo">
-    <a href="/"><img src="/images/logo-cinta.webp" alt="Los Alerces" srcset="/images/logo-cinta.webp"></a>
+    <a href="/"><img src="{{ '/images/logo-cinta.webp' | url }}" alt="Los Alerces" srcset="{{ '/images/logo-cinta.webp' | url }}"></a>
 </div>
 <div class="header-menu">
     <div class="top-header">
         <div class="cta-1">
             <a href="http://92.204.134.108/AGP/pages/login.faces" rel="noopener noreferrer" target="_blank">
-                <img src="/images/calendar.svg" style="height: 48px; padding: 0; margin: 0" alt="">
+                <img src="{{'/images/calendar.svg'|url}}" style="height: 48px; padding: 0; margin: 0" alt="">
                 <span>Reservá tu turno de forma virtual</span>
             </a>
         </div>
-            <img src="/images/instagram.webp" alt="Instagram">
-            <img src="/images/whatsapp.webp" alt="Whatsapp">
+            <img src="{{ '/images/instagram.webp' | url }}" alt="Instagram">
+            <img src="{{ '/images/whatsapp.webp' | url }}" alt="Whatsapp">
     </div>
     <div>
         <nav>

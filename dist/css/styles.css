@@ -89,7 +89,7 @@ nav a {
 .banner {
   height: 318px;
   width: 100%;
-  background-image: url("/images/los-alerces-banner.webp");
+  background-image: url("{{'/images/los-alerces-banner.webp'|url}}");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -124px;
