@@ -93,6 +93,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -124px;
+  transform: translateZ(-1px);
 }
 
 .banner .banner-bg {
@@ -150,4 +151,34 @@ video {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.info {
+  background-color: #c7cfd3;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
 }
