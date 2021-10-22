@@ -6,7 +6,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "build-gh": "eleventy --output=dist-gh --pathprefix=los-alerces && git subtree push --prefix dist-gh origin gh-pages"
+    "build-gh": "eleventy --output=dist-gh --pathprefix=los-alerces",
+    "deploy": "git subtree push --prefix dist-gh origin gh-pages"
   },
   "keywords": [],
   "author": "",
