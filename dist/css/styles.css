@@ -92,8 +92,13 @@ nav a {
   background-image: url("{{'/images/los-alerces-banner.webp'|url}}");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -124px;
-  transform: translateZ(-1px);
+  background-position: 100% -114px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .banner .banner-bg {
