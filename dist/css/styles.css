@@ -82,14 +82,13 @@ nav a {
 .cta-2 {
   width: 100%;
   background-color: #6f97b2;
-  right: 30px;
   position: relative;
 }
 
 .label {
   background-color: #6d777c;
   width: fit-content;
-  padding: 12px;
+  padding: 12px 22px;
   font-size: 13px;
   border-radius: 20px 20px 0 0;
   height: 16px;
@@ -202,6 +201,38 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.blocks {
+  text-align: center;
+  margin: 70px 0;
+}
+
+.block {
+  width: 186px;
+  height: 209px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 13px;
+}
+
+.block a {
+  color: #fff;
+  padding: 30px;
+}
+
+.bg-1 {
+  background-color: #9aa3a8;
+}
+
+.bg-2 {
+  background-color: #6d777c;
+}
+
+.bg-3 {
+  background-color: #3d4a50;
 }
 
 .p-2 {
