@@ -44,6 +44,20 @@
 
 </header>
     <main id="root" class="transition-fade">{{ content | safe }}</main>
+    <footer>
+        <div class="separator">
+        </div>
+        <div class="contact-info">
+            <div class="container">
+                <div class="address p-3">
+                Domeq García Norte 692, CP 9120. Puerto Madryn, Chubut
+                </div>
+                <div class="phone p-3">
+                Tel: 2804-601048
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="{{ '/vendor/swup.min.js' | url }}"></script>
     <script>
         const swup = new Swup({ containers: ["#root"], });

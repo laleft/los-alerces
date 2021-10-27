@@ -223,6 +223,44 @@ video {
   padding: 30px;
 }
 
+footer .separator {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 48px;
+}
+
+footer .contact-info {
+  background-color: #86a6ab;
+  font-size: 18px;
+  color: #fff;
+  height: 135px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address::before {
+  content: url("/images/mapmark.svg");
+  height: 20px;
+  width: 20px;
+  vertical-align: -25%;
+  padding-right: 4px;
+}
+
+.phone::before {
+  content: url("/images/phone.svg");
+  height: 20px;
+  width: 20px;
+  vertical-align: -25%;
+  padding-right: 4px;
+}
+
 .bg-1 {
   background-color: #9aa3a8;
 }
