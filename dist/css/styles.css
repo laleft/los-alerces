@@ -290,7 +290,7 @@ footer .contact-info {
 }
 
 .address::before {
- content: url('/images/mapmark.svg');
+ content: url("{{'/images/mapmark.svg' | url}}");
  height: 20px;
  width: 20px;
  vertical-align: -25%;
@@ -298,7 +298,7 @@ footer .contact-info {
 }
 
 .phone::before {
- content: url('/images/phone.svg');
+ content: url("{{'/images/phone.svg' | url}}");
  height: 20px;
  width: 20px;
  vertical-align: -25%;
